@@ -22,10 +22,10 @@ public class FinalProject {
     
     static String[] player_name;
     
-    public static List train_deck(){        // A function that return random cards in a list
-        List deck = null;                   //deck to be returned
-        List tdeck = null;                  //orinal train deck
-        for(int i = 0; i < 110; i++)        // First add card numbers into the list
+    public static List train_deck(){                            // A function that return random cards in a list
+        List<Integer> deck = new ArrayList<Integer>();        //deck to be returned
+        List<Integer> tdeck = new ArrayList<Integer>();       //orinal train deck
+        for(int i = 0; i < 110; i++)                            // First add card numbers into the list
             tdeck.add(i);
         Collections.shuffle(deck);          // Shuffle it like a normal physical deck.
         
@@ -50,9 +50,9 @@ public class FinalProject {
     }
     
     public static List route_deck(){
-        List deck = null;                   //deck to be returned
-        List rdeck = null;                  //orignal route deck
-        for(int i = 0; i < 30; i++)        // First add card numbers into the list
+        List<Integer> deck = new ArrayList<Integer>();      //deck to be returned
+        List<Integer> rdeck = new ArrayList<Integer>();     //orignal route deck
+        for(int i = 0; i < 30; i++)                         // First add card numbers into the list
             rdeck.add(i);
         Collections.shuffle(deck);          // Shuffle it like a normal physical deck.
         
@@ -68,6 +68,8 @@ public class FinalProject {
     public static void winner(int n){
         System.out.println("Winner is: " + player_name[n]);
     }
+    
+    //Random Exp values
     
     public static boolean end_check(List player_exp){
         int mostexp = 0;
