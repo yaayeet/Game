@@ -79,7 +79,7 @@ public class GeneralTests {
     
     @Test
     public void playercheck(){
-        
+        assertEquals(true, FinalProject.player_count());
     }
             
 }
