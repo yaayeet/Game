@@ -4,9 +4,13 @@
  * and open the template in the editor.
  */
 
+import finalproject.FinalProject;
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
+import java.util.List;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -43,16 +47,18 @@ public class GeneralTests {
     // public void hello() {}
     @Test 
     public void setup(){
-        // checking to see if everyone has necessary game components
+    // checking to see if everyone has necessary game components
     }
     
     @Test 
     public void validmove(){
-        // if it does one and only one of the three possible moves
+         
+    // if it does one and only one of the three possible moves
     }
     
     @Test
     public void scorecheck(){
+   
         // checks to see who is winning
     }
     
@@ -63,8 +69,12 @@ public class GeneralTests {
     }
     
     @Test
-    public void endcheck(){
-        // checks to see if the game is over
+    public void endcheck(){ 
+        List<Integer> player_exp = new ArrayList<>();
+        player_exp.add(1);
+
+        assertEquals(true, FinalProject.end_check(player_exp));
+    
     }
             
 }
