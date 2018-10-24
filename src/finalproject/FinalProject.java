@@ -5,6 +5,7 @@
  */
 package finalproject;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -18,6 +19,8 @@ public class FinalProject {
     /**
      * @param args the command line arguments
      */
+    
+    static String[] player_name;
     
     public static List train_deck(){        // A function that return random cards in a list
         List deck = null;                   //deck to be returned
@@ -60,6 +63,28 @@ public class FinalProject {
         
         rdeck.clear();                      //clears the list for a reshuffle 
         return deck;                        //return the deck list to the player
+    }
+    
+    public static void winner(int n){
+        System.out.println("Winner is: " + player_name[n]);
+    }
+    
+    public static boolean end_check(List player_exp){
+        int mostexp = 0;
+        int k = 0;
+        for(int i = 0; i < player_exp.size(); i++){
+            if(mostexp < (int)player_exp.get(i)){
+                mostexp = (int)player_exp.get(i);
+                k = i;
+            }
+        }    
+        
+        winner(k);
+        
+        if(mostexp == 0)
+            return false;
+        else
+            return true;
     }
     
     public static void main(String[] args) {
