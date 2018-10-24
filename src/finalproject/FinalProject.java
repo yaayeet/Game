@@ -20,7 +20,8 @@ public class FinalProject {
      * @param args the command line arguments
      */
     
-    static String[] player_name;
+    static String[] player_name = {"Andy", "Hasan", "James?"};
+    
     
     public static List train_deck(){                            // A function that return random cards in a list
         List<Integer> deck = new ArrayList<Integer>();        //deck to be returned
@@ -87,6 +88,13 @@ public class FinalProject {
             return false;
         else
             return true;
+    }
+    
+    public static boolean player_count(){
+        if(player_name.length <= 3 && player_name.length > 0)
+            return true;
+        
+        return false;
     }
     
     public static void main(String[] args) {
