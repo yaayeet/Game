@@ -76,5 +76,10 @@ public class GeneralTests {
         assertEquals(true, FinalProject.end_check(player_exp));
     
     }
+    
+    @Test
+    public void playercheck(){
+        
+    }
             
 }
