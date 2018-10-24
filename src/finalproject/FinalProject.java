@@ -81,8 +81,8 @@ public class FinalProject {
             }
         }    
         
-        winner(k);
-        
+        //winner(k);
+        //kk
         if(mostexp == 0)
             return false;
         else
