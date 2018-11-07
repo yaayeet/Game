@@ -5,6 +5,7 @@
  */
 package finalproject;
 
+import View.Board;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -20,13 +21,13 @@ public class FinalProject {
      * @param args the command line arguments
      */
     
-    static String[] player_name = {"Andy", "Hasan", "James?"};
+    static String[] player_name = {"Andy", "Hasan"};
     
     
     public static List train_deck(){                            // A function that return random cards in a list
         List<Integer> deck = new ArrayList<Integer>();        //deck to be returned
         List<Integer> tdeck = new ArrayList<Integer>();       //orinal train deck
-        for(int i = 0; i < 110; i++)                            // First add card numbers into the list
+        for(int i = 0; i < 240; i++)                            // First add card numbers into the list
             tdeck.add(i);
         Collections.shuffle(deck);          // Shuffle it like a normal physical deck.
         
@@ -66,13 +67,13 @@ public class FinalProject {
         return deck;                        //return the deck list to the player
     }
     
-    public static void winner(int n){
+    public static void winner(int n){                       //Winner name displayed
         System.out.println("Winner is: " + player_name[n]);
     }
     
     //Random Exp values
     
-    public static boolean end_check(List player_exp){
+    public static boolean end_check(List player_exp){           //To check if game ended
         int mostexp = 0;
         int k = 0;
         for(int i = 0; i < player_exp.size(); i++){
@@ -90,24 +91,47 @@ public class FinalProject {
             return true;
     }
     
-    public static String color_card(int i){
+    public static String color_card(int i){     //To get the color.
         String color = "NoColor";
         
         if(i < 45)
             color = "blue";
-        if(i > 45 && i < 90)
+        if(i >= 45 && i < 90)
             color = "red";
-        if(i > 90 && i < 135)
+        if(i >= 90 && i < 135)
             color = "green";
-        if(i > 135 && i > 180)
+        if(i >= 135 && i > 180)
             color = "yellow";
-        if(i > 180 && i > 225)
+        if(i >= 180 && i > 225)
             color = "black";       
         
         return color;
     }
     
-    public static boolean player_count(){
+    public static String train_card(int i){     //To get the type of the train car.
+        String car = "Locomotives";
+        
+        if(i < 12)
+            car = "Box";
+        if(i >= 12 && i < 24)
+            car = "Passenger";
+        if(i >= 24 && i < 36)
+            car = "Tanker";
+        if(i >= 36 && i > 48)
+            car = "Reefer";
+        if(i >= 48 && i > 60)
+            car = "Freight"; 
+        if(i >= 60 && i > 72)
+            car = "Hopper";
+        if(i >= 72 && i > 84)
+            car = "Coal";
+        if(i >= 84 && i > 96)
+            car = "Caboose";
+        
+        return car;
+    }
+    
+    public static boolean player_count(){               //Count the number of players in the game.
         if(player_name.length <= 3 && player_name.length > 0)
             return true;
         
