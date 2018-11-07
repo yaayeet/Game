@@ -15,17 +15,17 @@ public class Board {
     private final Destination BLANK_SQ = new Destination(Symbol.BLANK);
     
      private final Destination[][] board = {
-        {new Destination(Symbol.SF),BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.LA)},
-        {BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ},
-        {BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ},
-        {BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ},
-        {BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ},
-        {BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ},
-        {BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ},
-        {BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ},
-        {BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ},
-        {BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ},
-        {new Destination(Symbol.WA), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.TX)}
+        {new Destination(Symbol.SF),new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.LA)},
+        {new Destination(Symbol.VERT), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.VERT)},
+        {new Destination(Symbol.VERT), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.VERT)},
+        {new Destination(Symbol.VERT), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.VERT)},
+        {new Destination(Symbol.VERT), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.VERT)},
+        {new Destination(Symbol.VERT), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.VERT)},
+        {new Destination(Symbol.VERT), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.VERT)},
+        {new Destination(Symbol.VERT), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.VERT)},
+        {new Destination(Symbol.VERT), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.VERT)},
+        {new Destination(Symbol.VERT), BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, BLANK_SQ, new Destination(Symbol.VERT)},
+        {new Destination(Symbol.WA),new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.DASH), new Destination(Symbol.TX)}
     };
      
       // To make it a bit easier to figure out where a position is
