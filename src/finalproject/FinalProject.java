@@ -142,6 +142,8 @@ public class FinalProject {
         // TODO code application logic here\
         System.out.println("TICKET TO RIDE");
         System.out.println("THE CROSS-COUNTRY TRAIN ADVENTURE GAME!");
+        Board b = new Board();
+        System.out.println(b);
     }
     
 }
