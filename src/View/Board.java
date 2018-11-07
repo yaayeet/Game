@@ -47,7 +47,7 @@ public class Board {
             // Use last digit here to be consistent with digits across
             // the top and to make it easier to line things up
             result.append(lastDigit(rowNum++));
-            result.append("| ");
+            result.append("|");
             for (Destination sq : row) {
                 result.append(sq.toString());
             }
