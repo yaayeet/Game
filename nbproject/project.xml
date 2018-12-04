@@ -3,7 +3,11 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+<<<<<<< HEAD
             <name>Game</name>
+=======
+            <name>FinalProject</name>
+>>>>>>> 05c56be9669f10dd0f46e4a71d9100cb33d2b1d1
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>

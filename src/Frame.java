@@ -38,6 +38,7 @@ public class Frame extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jPanel6 = new javax.swing.JPanel();
         jCheckBox1 = new javax.swing.JCheckBox();
 
@@ -48,6 +49,13 @@ public class Frame extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
         jButton1.setForeground(new java.awt.Color(0, 51, 255));
+=======
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(null);
+
+>>>>>>> 05c56be9669f10dd0f46e4a71d9100cb33d2b1d1
         jButton1.setText("SF");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,7 +87,11 @@ public class Frame extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGap(0, 358, Short.MAX_VALUE)
+=======
+            .addGap(0, 0, Short.MAX_VALUE)
+>>>>>>> 05c56be9669f10dd0f46e4a71d9100cb33d2b1d1
         );
 
         jPanel1.add(jPanel2);
@@ -107,7 +119,11 @@ public class Frame extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGap(0, 454, Short.MAX_VALUE)
+=======
+            .addGap(0, 0, Short.MAX_VALUE)
+>>>>>>> 05c56be9669f10dd0f46e4a71d9100cb33d2b1d1
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,6 +166,7 @@ public class Frame extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(-100, -40, 780, 630);
 
+<<<<<<< HEAD
         getContentPane().add(jPanel1);
         jPanel1.setBounds(12, 13, 595, 452);
 
@@ -175,6 +192,29 @@ public class Frame extends javax.swing.JFrame {
         getContentPane().add(jPanel6);
         jPanel6.setBounds(12, 502, 596, 100);
 
+=======
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 592, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 448, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+>>>>>>> 05c56be9669f10dd0f46e4a71d9100cb33d2b1d1
         bindingGroup.bind();
 
         pack();
@@ -225,14 +265,20 @@ public class Frame extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+<<<<<<< HEAD
     private javax.swing.JCheckBox jCheckBox1;
+=======
+>>>>>>> 05c56be9669f10dd0f46e4a71d9100cb33d2b1d1
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+<<<<<<< HEAD
     private javax.swing.JPanel jPanel6;
+=======
+>>>>>>> 05c56be9669f10dd0f46e4a71d9100cb33d2b1d1
     private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 }
