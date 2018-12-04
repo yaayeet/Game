@@ -36,7 +36,6 @@ public class The_Board extends javax.swing.JPanel {
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -90,7 +89,7 @@ public class The_Board extends javax.swing.JPanel {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 358, Short.MAX_VALUE)
         );
 
         add(jPanel1);
@@ -118,7 +117,7 @@ public class The_Board extends javax.swing.JPanel {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 454, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -143,10 +142,6 @@ public class The_Board extends javax.swing.JPanel {
 
         add(jPanel4);
         jPanel4.setBounds(79, 422, 441, 13);
-
-        jLabel1.setText("jLabel1");
-        add(jLabel1);
-        jLabel1.setBounds(250, 180, 41, 16);
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -156,7 +151,6 @@ public class The_Board extends javax.swing.JPanel {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

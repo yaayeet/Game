@@ -21,7 +21,7 @@ public class Player {
      * @param args the command line arguments
      */
     
-    static String[] player_name = {"Andy", "Hasan"};
+    static String[] player_name = {"Andy", "Hasan", "Mark" , "Julius"};
     
     public static void winner(int n){                       //Winner name displayed
         System.out.println("Winner is: " + player_name[n]);
@@ -54,11 +54,15 @@ public class Player {
         return false;
     }
     
+    public static String[] player_name(){
+        return player_name;
+    }
+    
     public static void main(String[] args) {
         // TODO code application logic here\
-        System.out.println("TICKET TO RIDE");
-        System.out.println("THE CROSS-COUNTRY TRAIN ADVENTURE GAME!");
-        board b = new board();
+        //System.out.println("TICKET TO RIDE");
+        //System.out.println("THE CROSS-COUNTRY TRAIN ADVENTURE GAME!");
+        //board b = new board();
         //System.out.println(b);
     }
     
