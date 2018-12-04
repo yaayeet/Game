@@ -53,7 +53,20 @@ public class card_decks {
             rdeck.remove(i);                // remove cards from the orignal deck
         }
         
+        //deck = route_select(deck);        //user selects cards out of the 3 route cards.
+        
         rdeck.clear();                      //clears the list for a reshuffle 
         return deck;                        //return the deck list to the player
+    }
+    
+    public static List route_select(List rout){
+        //display route
+        //select cards
+        String user_input;
+//        while(user_input != "q"){
+//            tostring(user_input);
+//        }
+        //add and remove cards
+        return rout;
     }
 }

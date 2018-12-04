@@ -5,14 +5,19 @@
  */
 package Model;
 
+import java.util.List;
+import java.util.Random;
+
 /**
  *
  * @author Administrator
  */
 public class board {
-    
-    
-    board(){
+    public static String plays_first(String[] names){               // return who plays first
+        Random rand = new Random();
+        int n = rand.nextInt(4) + 1;
+        String player1 = names[n];
         
+        return player1;
     }
 }

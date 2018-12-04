@@ -5,7 +5,9 @@
  */
 package Model;
 
-import Model.board;
+import static Model.board.plays_first;
+import static Model.card_decks.route_deck;
+import static Model.card_decks.train_deck;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -22,6 +24,9 @@ public class Player {
      */
     
     static String[] player_name = {"Andy", "Hasan", "Mark" , "Julius"};
+    static List hand = new ArrayList();
+    
+    static String firstplay = plays_first(player_name);
     
     public static void winner(int n){                       //Winner name displayed
         System.out.println("Winner is: " + player_name[n]);
@@ -56,6 +61,16 @@ public class Player {
     
     public static String[] player_name(){
         return player_name;
+    }
+    
+    public static void player_hand(){
+        List trains = new ArrayList();
+        List routes = new ArrayList();
+        trains = train_deck();
+        routes = route_deck();
+        
+        hand.add(0, trains);                    // adds the train cards to the hand.
+        hand.add(1, routes);                    // adds the route card to the hand.
     }
     
     public static void main(String[] args) {
