@@ -24,9 +24,13 @@ public class Player {
      */
     
     static String[] player_name = {"Andy", "Hasan", "Mark" , "Julius"};
-    static List hand = new ArrayList();
     
-    static String firstplay = plays_first(player_name);
+    static String firstplay = plays_first(player_name);         //get the name of the player who plays first
+    
+    Player(){                                                   // a constructor to generate hands for each player.
+        List hand = new ArrayList();                         // hand of the player
+        player_hand(hand);                                  //fill up player's hand
+    }
     
     public static void winner(int n){                       //Winner name displayed
         System.out.println("Winner is: " + player_name[n]);
@@ -63,7 +67,7 @@ public class Player {
         return player_name;
     }
     
-    public static void player_hand(){
+    public static void player_hand(List hand){
         List trains = new ArrayList();
         List routes = new ArrayList();
         trains = train_deck();
