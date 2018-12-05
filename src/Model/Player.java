@@ -32,29 +32,12 @@ public class Player {
         player_hand(hand);                                  //fill up player's hand
     }
     
-    public static void winner(int n){                       //Winner name displayed
-        System.out.println("Winner is: " + player_name[n]);
+    public static String winner(int n){                       //Winner name displayed
+        String win = player_name[n];
+        return win;
     }
     
     //Random Exp values    
-    
-    public static boolean end_check(List player_exp){           //To check if game ended
-        int mostexp = 0;
-        int k = 0;
-        for(int i = 0; i < player_exp.size(); i++){
-            if(mostexp < (int)player_exp.get(i)){
-                mostexp = (int)player_exp.get(i);
-                k = i;
-            }
-        }    
-        
-        //winner(k);
-        //kk
-        if(mostexp == 0)
-            return false;
-        else
-            return true;
-    }
     
     public static boolean player_count(){               //Count the number of players in the game.
         if(player_name.length <= 3 && player_name.length > 0)
