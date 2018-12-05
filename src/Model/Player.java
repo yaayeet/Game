@@ -5,7 +5,7 @@
  */
 package Model;
 
-import static Model.board.plays_first;
+import static Control.board.plays_first;
 import static Model.card_decks.route_deck;
 import static Model.card_decks.train_deck;
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public class Player {
     
     static String firstplay = plays_first(player_name);         //get the name of the player who plays first
     
-    Player(){                                                   // a constructor to generate hands for each player.
+    public Player(){                                                   // a constructor to generate hands for each player.
         List hand = new ArrayList();                         // hand of the player
         player_hand(hand);                                  //fill up player's hand
     }
@@ -51,13 +51,13 @@ public class Player {
     }
     
     public static void player_hand(List hand){
-        List trains = new ArrayList();
-        List routes = new ArrayList();
-        trains = train_deck();
-        routes = route_deck();
+        List cars = new ArrayList();
+        List highways = new ArrayList();
+        //trains = train_deck();
+        //routes = route_deck();
         
-        hand.add(0, trains);                    // adds the train cards to the hand.
-        hand.add(1, routes);                    // adds the route card to the hand.
+        hand.add(0, cars);                    // adds the train cards to the hand.
+        hand.add(1, highways);                    // adds the route card to the hand.
     }
     
     public static void main(String[] args) {

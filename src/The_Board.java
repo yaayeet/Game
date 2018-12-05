@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import Model.Player; 
 /**
  *
  * @author Administrator
  */
 public class The_Board extends javax.swing.JPanel {
-
+    
+    Player one = new Player(); 
+    
     /**
      * Creates new form The_Board
      */
@@ -64,20 +66,36 @@ public class The_Board extends javax.swing.JPanel {
         setLayout(null);
 
         jButton1.setText("SF");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
-        jButton1.setBounds(12, 13, 47, 25);
+        jButton1.setBounds(20, 10, 75, 29);
 
-        jButton2.setText("LA");
+        jButton2.setText("Oakland");
+        jButton2.setToolTipText("");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         add(jButton2);
-        jButton2.setBounds(533, 13, 47, 25);
+        jButton2.setBounds(500, 10, 96, 29);
 
-        jButton3.setText("WA");
+        jButton3.setText("Hayward");
         add(jButton3);
-        jButton3.setBounds(527, 410, 53, 25);
+        jButton3.setBounds(500, 410, 98, 29);
 
-        jButton4.setText("TX");
+        jButton4.setText("San Jose");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         add(jButton4);
-        jButton4.setBounds(12, 410, 49, 25);
+        jButton4.setBounds(0, 410, 90, 29);
 
         jPanel1.setBackground(new java.awt.Color(255, 0, 0));
 
@@ -117,7 +135,7 @@ public class The_Board extends javax.swing.JPanel {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 454, Short.MAX_VALUE)
+            .addGap(0, 380, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -125,7 +143,7 @@ public class The_Board extends javax.swing.JPanel {
         );
 
         add(jPanel2);
-        jPanel2.setBounds(66, 13, 454, 13);
+        jPanel2.setBounds(110, 13, 380, 13);
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 0));
 
@@ -133,7 +151,7 @@ public class The_Board extends javax.swing.JPanel {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 441, Short.MAX_VALUE)
+            .addGap(0, 410, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -141,8 +159,20 @@ public class The_Board extends javax.swing.JPanel {
         );
 
         add(jPanel4);
-        jPanel4.setBounds(79, 422, 441, 13);
+        jPanel4.setBounds(90, 420, 410, 13);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
