@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 
-import finalproject.FinalProject;
+import Model.Player;
+import Model.board;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.After;
@@ -73,13 +74,13 @@ public class GeneralTests {
         List<Integer> player_exp = new ArrayList<>();
         player_exp.add(1);
 
-        assertEquals(true, FinalProject.end_check(player_exp));
+        assertEquals(true, board.end_check(player_exp));
     
     }
     
     @Test
     public void playercheck(){
-        assertEquals(true, FinalProject.player_count());
+        assertEquals(true, Player.player_count());
     }
             
 }
