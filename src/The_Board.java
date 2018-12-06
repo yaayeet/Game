@@ -34,10 +34,18 @@ public class The_Board extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        button1 = new java.awt.Button();
+        button2 = new java.awt.Button();
+        button3 = new java.awt.Button();
+        button4 = new java.awt.Button();
+        button5 = new java.awt.Button();
+        button6 = new java.awt.Button();
+        button7 = new java.awt.Button();
+        button8 = new java.awt.Button();
+        button9 = new java.awt.Button();
+        button10 = new java.awt.Button();
+        button11 = new java.awt.Button();
+        button12 = new java.awt.Button();
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -72,7 +80,7 @@ public class The_Board extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(20, 10, 75, 29);
+        jButton1.setBounds(10, 10, 80, 25);
 
         jButton2.setText("Oakland");
         jButton2.setToolTipText("");
@@ -82,11 +90,11 @@ public class The_Board extends javax.swing.JPanel {
             }
         });
         add(jButton2);
-        jButton2.setBounds(500, 10, 96, 29);
+        jButton2.setBounds(500, 10, 79, 25);
 
         jButton3.setText("Hayward");
         add(jButton3);
-        jButton3.setBounds(500, 410, 98, 29);
+        jButton3.setBounds(500, 410, 83, 25);
 
         jButton4.setText("San Jose");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -95,71 +103,117 @@ public class The_Board extends javax.swing.JPanel {
             }
         });
         add(jButton4);
-        jButton4.setBounds(0, 410, 90, 29);
+        jButton4.setBounds(0, 410, 90, 25);
 
-        jPanel1.setBackground(new java.awt.Color(255, 0, 0));
+        button1.setActionCommand("");
+        button1.setBackground(new java.awt.Color(51, 0, 255));
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
+            }
+        });
+        add(button1);
+        button1.setBounds(30, 290, 30, 110);
+        button1.getAccessibleContext().setAccessibleName("");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 14, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 358, Short.MAX_VALUE)
-        );
+        button2.setBackground(new java.awt.Color(255, 255, 51));
+        button2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button2ActionPerformed(evt);
+            }
+        });
+        add(button2);
+        button2.setBounds(380, 410, 110, 24);
 
-        add(jPanel1);
-        jPanel1.setBounds(547, 45, 14, 358);
+        button3.setBackground(new java.awt.Color(51, 255, 153));
+        button3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button3ActionPerformed(evt);
+            }
+        });
+        add(button3);
+        button3.setBounds(250, 10, 110, 24);
 
-        jPanel3.setBackground(new java.awt.Color(51, 51, 255));
+        button4.setBackground(new java.awt.Color(51, 255, 153));
+        button4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button4ActionPerformed(evt);
+            }
+        });
+        add(button4);
+        button4.setBounds(380, 10, 110, 24);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 17, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 358, Short.MAX_VALUE)
-        );
+        button5.setBackground(new java.awt.Color(255, 0, 0));
+        button5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button5ActionPerformed(evt);
+            }
+        });
+        add(button5);
+        button5.setBounds(530, 50, 30, 110);
 
-        add(jPanel3);
-        jPanel3.setBounds(39, 45, 17, 358);
+        button6.setBackground(new java.awt.Color(255, 0, 0));
+        button6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button6ActionPerformed(evt);
+            }
+        });
+        add(button6);
+        button6.setBounds(530, 170, 30, 110);
 
-        jPanel2.setBackground(new java.awt.Color(51, 255, 51));
+        button7.setBackground(new java.awt.Color(255, 0, 0));
+        button7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button7ActionPerformed(evt);
+            }
+        });
+        add(button7);
+        button7.setBounds(530, 290, 30, 110);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 13, Short.MAX_VALUE)
-        );
+        button8.setBackground(new java.awt.Color(51, 0, 255));
+        button8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button8ActionPerformed(evt);
+            }
+        });
+        add(button8);
+        button8.setBounds(30, 50, 30, 110);
 
-        add(jPanel2);
-        jPanel2.setBounds(110, 13, 380, 13);
+        button9.setBackground(new java.awt.Color(51, 0, 255));
+        button9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button9ActionPerformed(evt);
+            }
+        });
+        add(button9);
+        button9.setBounds(30, 170, 30, 110);
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 0));
+        button10.setBackground(new java.awt.Color(51, 255, 153));
+        button10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button10ActionPerformed(evt);
+            }
+        });
+        add(button10);
+        button10.setBounds(120, 10, 110, 24);
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 13, Short.MAX_VALUE)
-        );
+        button11.setBackground(new java.awt.Color(255, 255, 51));
+        button11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button11ActionPerformed(evt);
+            }
+        });
+        add(button11);
+        button11.setBounds(100, 410, 110, 24);
 
-        add(jPanel4);
-        jPanel4.setBounds(90, 420, 410, 13);
+        button12.setBackground(new java.awt.Color(255, 255, 51));
+        button12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button12ActionPerformed(evt);
+            }
+        });
+        add(button12);
+        button12.setBounds(240, 410, 110, 24);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -174,17 +228,73 @@ public class The_Board extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button1ActionPerformed
+
+    private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button2ActionPerformed
+
+    private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button3ActionPerformed
+
+    private void button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button4ActionPerformed
+
+    private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button5ActionPerformed
+
+    private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button6ActionPerformed
+
+    private void button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button7ActionPerformed
+
+    private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button8ActionPerformed
+
+    private void button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button9ActionPerformed
+
+    private void button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button10ActionPerformed
+
+    private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button11ActionPerformed
+
+    private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button12ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Button button1;
+    private java.awt.Button button10;
+    private java.awt.Button button11;
+    private java.awt.Button button12;
+    private java.awt.Button button2;
+    private java.awt.Button button3;
+    private java.awt.Button button4;
+    private java.awt.Button button5;
+    private java.awt.Button button6;
+    private java.awt.Button button7;
+    private java.awt.Button button8;
+    private java.awt.Button button9;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     // End of variables declaration//GEN-END:variables
 }
