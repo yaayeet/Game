@@ -5,10 +5,11 @@
  */
 package Model;
 
-import static Control.board.plays_first;
-import static Model.card_decks.route_deck;
-import static Model.card_decks.train_deck;
+//import static Control.board.plays_first;
+//import static Model.card_decks.route_deck;
+//import static Model.card_decks.train_deck;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -25,11 +26,23 @@ public class Player {
     
     static String[] player_name = {"Andy", "Hasan", "Mark" , "Julius"};
     
-    static String firstplay = plays_first(player_name);         //get the name of the player who plays first
+    static String firstplay = plays_names(player_name);         //get the name of the player who plays first
+
+    private static String plays_names(String[] player_name) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    static List<String> hand = Arrays.asList(new String[2]);           // hand for the player
     
     public Player(){                                                   // a constructor to generate hands for each player.
-        List hand = new ArrayList();                         // hand of the player
-        player_hand(hand);                                  //fill up player's hand
+        List<String> hand = Arrays.asList(new String[2]);       // sets the list size as 2.
+        fillup_card(hand);                               //fills up cards for the player at the start.
+        fillin_cards(hand);
+    }
+    
+    public void fillin_cards(List<String> hand2){           //fills up cards once set
+        for(int i = 0 ; i < hand2.size(); i++)
+            hand.add(hand2.get(i));
     }
     
     public static String winner(int n){                       //Winner name displayed
@@ -50,22 +63,29 @@ public class Player {
         return player_name;
     }
     
-    public static void player_hand(List hand){
-        List cars = new ArrayList();
-        List highways = new ArrayList();
-        //trains = train_deck();
-        //routes = route_deck();
+    public void player_hand(String var){
         
-        hand.add(0, cars);                    // adds the train cards to the hand.
-        hand.add(1, highways);                    // adds the route card to the hand.
+        int c = 0;
+        
+        for(int i = 0; i < hand.size(); i++){       //Checks what part of the list is vacant
+            if(hand.get(i) == "X")
+                break;
+            else if(hand.get(i) == "X")
+                c = i;
+            else
+                break;
+        }
+        
+        hand.add(c, var);                    // adds the train cards to the hand.
     }
     
-    public static void main(String[] args) {
-        // TODO code application logic here\
-        //System.out.println("TICKET TO RIDE");
-        //System.out.println("THE CROSS-COUNTRY TRAIN ADVENTURE GAME!");
-        //board b = new board();
-        //System.out.println(b);
+    public static void play_turn(int n){    //once a turn is played the card selected is dropped and replaced with an "X"
+        hand.remove(n);
+        hand.add(n, "X");
+    }
+
+    private void fillup_card(List<String> hand) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

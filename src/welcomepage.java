@@ -28,27 +28,27 @@ public class welcomepage extends javax.swing.JPanel {
 
         label1 = new java.awt.Label();
         label2 = new java.awt.Label();
-        label3 = new java.awt.Label();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(null);
 
         label1.setText("Welcome to Bay Area Trafic");
         add(label1);
-        label1.setBounds(197, 25, 174, 20);
+        label1.setBounds(197, 25, 153, 20);
 
         label2.setText("A game where instead of relaxing you stress");
         add(label2);
         label2.setBounds(150, 60, 290, 50);
 
-        label3.setText("label3");
-        add(label3);
-        label3.setBounds(100, 140, 42, 20);
+        jLabel1.setText("jLabel1");
+        add(jLabel1);
+        jLabel1.setBounds(-10, -10, 710, 480);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private java.awt.Label label1;
     private java.awt.Label label2;
-    private java.awt.Label label3;
     // End of variables declaration//GEN-END:variables
 }

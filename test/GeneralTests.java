@@ -5,7 +5,7 @@
  */
 
 import Model.Player;
-import Model.board;
+import Control.board;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.After;

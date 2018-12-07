@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import Control.board;
+import static Control.board.index_from_button;
 import Model.Player; 
+
 /**
  *
  * @author Administrator
@@ -18,6 +21,7 @@ public class The_Board extends javax.swing.JPanel {
     public The_Board() {
         initComponents();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -266,6 +270,8 @@ public class The_Board extends javax.swing.JPanel {
 
     private void button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button10ActionPerformed
         // TODO add your handling code here:
+        int i = 0;
+        index_from_button(i);
     }//GEN-LAST:event_button10ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
