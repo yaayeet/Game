@@ -63,7 +63,7 @@ public class Player {
         return player_name;
     }
     
-    public void player_hand(String var){
+    public static void player_hand(String var){
         
         int c = 0;
         
@@ -79,9 +79,34 @@ public class Player {
         hand.add(c, var);                    // adds the train cards to the hand.
     }
     
+    public static String color_select(int i){
+        String c = " ";
+        if(i < 3)
+            c = "green";
+//        if(i >= 3 && i < 6)
+//            c = "red";
+//        if(i >= 6 && i < 9)
+//            c = "green";
+//        if(i >= 9 && i > 12)
+//            c = "yellow";
+  
+        return c;
+    }
+    
     public static void play_turn(int n){    //once a turn is played the card selected is dropped and replaced with an "X"
-        hand.remove(n);
-        hand.add(n, "X");
+        String colr = color_select(n);      // gets the color of the block
+        card_validity(hand , colr);         // checks validity and removes the card from the hand.
+        place_claim(n);
+    }
+    
+    public static boolean card_validity(List<String> hand2 , String col){      //checks validity of the color of the card
+        for(int i = 0; i < hand2.size(); i++){
+            if(hand.get(i) == col)
+                hand.remove(i);
+                hand.add(i, "X");
+                return true;
+        }
+        return false;
     }
 
     private void fillup_card(List<String> hand) {

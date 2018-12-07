@@ -46,4 +46,8 @@ public class board {
         // edit the hand
         play_turn(n);
     }
+    
+    public static int place_claim(int e){
+        Jlable
+    }
 }
