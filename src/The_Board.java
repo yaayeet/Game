@@ -6,6 +6,8 @@
 import Control.board;
 import static Control.board.index_from_button;
 import Model.Player; 
+import javax.swing.JButton;
+import javax.swing.JLabel;
 
 /**
  *
@@ -23,7 +25,8 @@ public class The_Board extends javax.swing.JPanel {
     }
     
     
-    
+    JLabel label1 = new JLabel("X");
+    JLabel label2 = new JLabel("Y");
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -274,6 +277,10 @@ public class The_Board extends javax.swing.JPanel {
         // TODO add your handling code here:
         int i = 0;
         index_from_button(i);
+        JButton clicked = (JButton) evt.getSource();
+        //check what player then claim it.
+        
+        label1.setText(clicked.getText());
     }//GEN-LAST:event_button10ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed

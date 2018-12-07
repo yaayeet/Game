@@ -8,6 +8,7 @@ package Model;
 //import static Control.board.plays_first;
 //import static Model.card_decks.route_deck;
 //import static Model.card_decks.train_deck;
+import static Control.board.place_claim;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
