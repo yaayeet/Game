@@ -36,7 +36,8 @@ public class board {
 //    }
     
 
-    private Player  a, b;
+    private Player  a = new Player();
+    private Player  b = new Player();
     
     public static String player_names(String[] names)
     {               // return who plays first
@@ -63,5 +64,25 @@ public class board {
            return e;
         }
         return e;
+    }
+    
+    static int pnum = -1;
+    public static int set_player_num(){
+        if(pnum == -1)
+            pnum = 0;
+        else
+            pnum = 1;
+        
+        return pnum;
+    }
+    
+    public static String what_player(){
+        
+//        if(a.getplayer_num() == 0)
+//            return X;
+//        else 
+//            return Y;
+//        
+//        return 0;
     }
 }

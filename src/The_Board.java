@@ -6,6 +6,8 @@
 import Control.board;
 import static Control.board.index_from_button;
 import Model.Player; 
+import java.awt.event.ActionEvent;
+import javafx.event.EventHandler;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
@@ -279,8 +281,11 @@ public class The_Board extends javax.swing.JPanel {
         index_from_button(i);
         JButton clicked = (JButton) evt.getSource();
         //check what player then claim it.
-        
-        label1.setText(clicked.getText());
+        button10.setOnAction(new EventHandler<ActionEvent>() {
+        @Override public void handle(ActionEvent e) {
+            label1.setText(what_player());
+        }
+        });
     }//GEN-LAST:event_button10ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
@@ -290,7 +295,6 @@ public class The_Board extends javax.swing.JPanel {
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_button12ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Button button1;

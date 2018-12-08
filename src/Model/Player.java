@@ -9,6 +9,7 @@ package Model;
 //import static Model.card_decks.route_deck;
 //import static Model.card_decks.train_deck;
 import static Control.board.place_claim;
+import static Control.board.set_player_num;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -35,10 +36,17 @@ public class Player {
     
     static List<String> hand = Arrays.asList(new String[2]);           // hand for the player
     
+    static int playernum = -1;
+    
     public Player(){                                                   // a constructor to generate hands for each player.
         List<String> hand = Arrays.asList(new String[2]);       // sets the list size as 2.
         fillup_card(hand);                               //fills up cards for the player at the start.
         fillin_cards(hand);
+        playernum = set_player_num();
+    }
+    
+    public static int getplayer_num(){
+        return playernum;
     }
     
     public void fillin_cards(List<String> hand2){           //fills up cards once set
