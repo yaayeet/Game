@@ -1,3 +1,6 @@
+
+import static javafx.application.Application.launch;
+import java.io.*;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -28,26 +31,51 @@ public class welcomepage extends javax.swing.JPanel {
 
         label1 = new java.awt.Label();
         label2 = new java.awt.Label();
-        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setLayout(null);
 
         label1.setText("Welcome to Bay Area Trafic");
         add(label1);
-        label1.setBounds(197, 25, 153, 20);
+        label1.setBounds(197, 25, 174, 20);
 
         label2.setText("A game where instead of relaxing you stress");
         add(label2);
-        label2.setBounds(150, 60, 290, 50);
+        label2.setBounds(150, 50, 290, 50);
 
-        jLabel1.setText("jLabel1");
-        add(jLabel1);
-        jLabel1.setBounds(-10, -10, 710, 480);
+        jButton1.setText("Start Game");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        add(jButton1);
+        jButton1.setBounds(220, 130, 112, 29);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        //jPanel jPanel5 = new jPanel;  
+        this.setVisible(false);
+        new The_Board().setVisible(true);
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    public static void main(String[] args) {
+        //launch(args);
+        //java.awt.EventQueue.invokeLater(new Runable(){
+        
+        //@Override;
+        //public void run(){
+            //new welcomepage().setVisible(true);
+        //}} );
+        
+        
+        
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton1;
     private java.awt.Label label1;
     private java.awt.Label label2;
     // End of variables declaration//GEN-END:variables
