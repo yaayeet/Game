@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import Model.Player; 
+//import Model.Player; 
 
 /**
  *
@@ -40,8 +40,9 @@ public class GUI extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        launch(args);
-        
+        //launch(args);
+        new welcomepage().setVisible(true);
+           
         
     }
     

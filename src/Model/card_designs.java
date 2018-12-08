@@ -26,27 +26,4 @@ public class card_designs {
         
         return color;
     }
-    
-    public static String train_card(int i){     //To get the type of the train car.
-        String car = "car";
-        
-        if(i < 12)
-            car = "SUV";
-        if(i >= 12 && i < 24)
-            car = "Truck";
-        if(i >= 24 && i < 36)
-            car = "Tanker";
-        if(i >= 36 && i > 48)
-            car = "Racecar";
-        if(i >= 48 && i > 60)
-            car = "Semi"; 
-        if(i >= 60 && i > 72)
-            car = "Convertable";
-        if(i >= 72 && i > 84)
-            car = "Coal";
-        if(i >= 84 && i > 96)
-            car = "Uber";
-        
-        return car;
-    }
 }
