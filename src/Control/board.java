@@ -38,7 +38,8 @@ public class board {
 
     private Player  a, b;
     
-    public static String player_names(String[] names){               // return who plays first
+    public static String player_names(String[] names)
+    {               // return who plays first
         Random rand = new Random();
         int n = rand.nextInt(4) + 1;
         String player1 = names[n];
@@ -52,8 +53,14 @@ public class board {
         play_turn(n);
     }
 
-    public static int place_claim(int e){
+    public static int place_claim(int e)
+    {
         int i = 0;
         
+        
+        for(i = 0; i < e; i++)
+        {
+           return e;
+        }
     }
 }
