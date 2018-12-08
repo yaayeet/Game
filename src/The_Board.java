@@ -281,11 +281,11 @@ public class The_Board extends javax.swing.JPanel {
         index_from_button(i);
         JButton clicked = (JButton) evt.getSource();
         //check what player then claim it.
-        button10.setOnAction(new EventHandler<ActionEvent>() {
-        @Override public void handle(ActionEvent e) {
-            label1.setText(what_player());
-        }
-        });
+        //button10.setOnAction(new EventHandler<ActionEvent>() {
+        //@Override public void handle(ActionEvent e) {
+            //label1.setText(what_player());
+       // }
+        //});
     }//GEN-LAST:event_button10ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed

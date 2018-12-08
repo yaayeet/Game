@@ -10,7 +10,7 @@ package Model;
  * @author Administrator
  */
 public class Position {
-    static String Pos;
+    static String Pos; // position where player is at 
     
     Position(String i){
         Pos = i;

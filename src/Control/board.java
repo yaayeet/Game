@@ -54,7 +54,7 @@ public class board {
         play_turn(n);
     }
 
-    public static int place_claim(int e)
+    public static int place_claim(int e)// this is to place down a card
     {
         int i = 0;
         
@@ -67,7 +67,7 @@ public class board {
     }
     
     static int pnum = -1;
-    public static int set_player_num(){
+    public static int set_player_num(){ 
         if(pnum == -1)
             pnum = 0;
         else
@@ -78,11 +78,11 @@ public class board {
     
     public static String what_player(){
         
-//        if(a.getplayer_num() == 0)
-//            return X;
-//        else 
-//            return Y;
-//        
-//        return 0;
+        //if(a.getplayer_num() == 0)
+            //return X;
+        //else 
+            //return Y;
+        
+        return "NAME";
     }
 }

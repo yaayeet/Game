@@ -74,12 +74,12 @@ public class card_decks {
 //    }
     
     public String card_deck(){
-        String[] color = {"blue" ,"green" , "yellow" , "red"};
+        String[] color = {"blue" ,"green" , "yellow" , "red"}; // types of places you can go
         Random rand = new Random();
         return color[rand.nextInt(3)];
     }
     
-    public void fillup_card(List<String> hand){
+    public void fillup_card(List<String> hand){ //pick up a card 
         hand.add(card_deck());
         hand.add(card_deck());
     }
